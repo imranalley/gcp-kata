@@ -1,16 +1,16 @@
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "4.51.0"
     }
   }
 }
 
 provider "google" {
-  credentials = file("<NAME>.json")
+  credentials = file("imran-ali-5027-0d445525fe7a.json")
 
-  project = "<PROJECT_ID>"
+  project = "imran-ali-5027"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
